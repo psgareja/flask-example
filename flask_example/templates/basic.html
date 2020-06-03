@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <h1>Hello {{name}} </h1>
+        <h2>here is pradip gareja</h2>
+        <h1>{{letters}}</h1>
+        <h1>{{pradi_dict['pradi_name']}}</h1>
+        <ul>
+            {% for list in my_list %}
+            <li>{{list}}</li>
+            {%endfor%}
+        </ul>
+        <img style="width:200px" src="../static/p.jpg"/>
+        {% if 'pradip' in my_list%}
+            <p>Found you pradip</p>
+        {%else%}
+            <p>Hmm....Pradip not here</p>
+        {%endif%}
+
+
+        {% if user_logged_in%}
+            <p>Welcome back you are now loged in </p>
+        {%else%}
+        {%endif%}
+    </body>
+
+
+</html>
