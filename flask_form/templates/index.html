@@ -1,0 +1,18 @@
+<h1>Welcome To Student Survey</h1>
+<form method="POST">
+ {{form.hidden_tag()}}
+ {{form.passion.label}}{{form.passion}}
+ <br>
+ {{form.student.label}}{{form.student}}
+ <br>
+ {{form.department.label}}{{form.department}}
+ <br>
+ {{form.subject.label}}{{form.subject}}
+ <br>
+ {{form.feedback.label}}{{form.feedback}}
+<br>
+{{form.submit()}}
+ 
+
+
+</form>
